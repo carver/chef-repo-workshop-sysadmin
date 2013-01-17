@@ -1,0 +1,34 @@
+    1  chsh -s /bin/bash opscode
+    2  aptitude install git
+    3  git clone git@github.com:carver/gnu-screen-config.git
+    4  git clone git://github.com/carver/gnu-screen-config.git
+    5  ln gnu-screen-config/.screenrc 
+    6  ls -a
+    7  screen
+    8  ls
+    9  aptitude install htop
+   10  /etc/init.d/ntp status
+   11  ntpdate -u 10.124.189.96
+   12  ip addr
+   13  hostname -f
+   14  nslookup ip-10-124-189-96.ec2.internal
+   15  ntpdate -u 23.20.75.227
+   16  ntpdate -u 10.124.189.96
+   17  netstat nlp
+   18  netstat nlTp
+   19  netstat -tap
+   20  /etc/init.d/ntp status
+   21  iptables -l
+   22  iptables -L
+   23  ntpdate -u localhost
+   24  hostname -f
+   25  ntpdate -u ip-10-124-189-96.ec2.internal
+   26  ntpdate -u ip-10-124-189-96
+   27  ntpdate -u 10.124.189.96
+   28  telnet localhost 25
+   29  ls ~/.ssh
+   30  ls -al carver/
+   31  ls -al /home/carver/
+   32  ls -al /home/carver/.ssh/
+   33  history
+   34  history > target-bash-root.log

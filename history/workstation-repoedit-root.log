@@ -1,0 +1,40 @@
+    1  chsh -s /bin/bash opscode
+    2  which bash
+    3  chsh -s /bin/bash root
+    4  man chsh
+    5  aptitude install git
+    6  git@github.com:carver/gnu-screen-config.git
+    7  git clone git@github.com:carver/gnu-screen-config.git
+    8  git clone git://github.com/carver/gnu-screen-config.git
+    9  ls gnu-screen-config/
+   10  ls -a gnu-screen-config/
+   11  man ln
+   12  ln gnu-screen-config/.screenrc .
+   13  ls -a
+   14  screen
+   15  knife cookbook site download chef-client
+   16  tar xvzf chef-client-2.1.6.tar.gz 
+   17  ls
+   18  mv chef-client cookbooks/.
+   19  ls cookbooks/
+   20  rm chef-client-2.1.6.tar.gz 
+   21  knife cookbook upload chef-client
+   22  emacs roles/base.rb 
+   23  ls roles/
+   24  knife help
+   25  knife help list
+   26  knife node list
+   27  ls
+   28  ls cookbooks/
+   29  ls roles/
+   30  ls data_bags/
+   31  knife node help
+   32  knife node show ip-10-124-189-96.ec2.internal
+   33  knife node edit ip-10-124-189-96.ec2.internal
+   34  export EDITOR=/usr/bin/emacs
+   35  
+   36  ls
+   37  emacs roles/base.rb 
+   38  history
+   39  cd ../chef-repo-workshop-sysadmin
+   40  history > workstation-repoedit-root.log

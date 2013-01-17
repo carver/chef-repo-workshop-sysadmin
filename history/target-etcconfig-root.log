@@ -1,0 +1,14 @@
+    1  chsh -s /bin/bash opscode
+    2  aptitude install git
+    3  git clone git@github.com:carver/gnu-screen-config.git
+    4  git clone git://github.com/carver/gnu-screen-config.git
+    5  ln gnu-screen-config/.screenrc 
+    6  ls -a
+    7  screen
+    8  ls /etc/chef/
+    9  cat /etc/chef/client.rb
+   10  cd /etc
+   11  cat motd.tail 
+   12  cat sudoers
+   13  cd ~
+   14  history > target-etcconfig-root.log

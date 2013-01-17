@@ -1,0 +1,11 @@
+    1  ls
+    2  cd chef-repo-workshop-sysadmin/
+    3  ls
+    4  knife cookbook site download
+    5  knife cookbook site download chef-client
+    6  sudo -s
+    7  history
+    8  history > workstation-repoedit-opscode.log
+    9  cd ..
+   10  cd chef-repo-workshop-sysadmin
+   11  history > workstation-repoedit-opscode.log

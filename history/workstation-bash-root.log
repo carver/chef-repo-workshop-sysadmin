@@ -1,0 +1,109 @@
+    1  chsh -s /bin/bash opscode
+    2  which bash
+    3  chsh -s /bin/bash root
+    4  man chsh
+    5  aptitude install git
+    6  git@github.com:carver/gnu-screen-config.git
+    7  git clone git@github.com:carver/gnu-screen-config.git
+    8  git clone git://github.com/carver/gnu-screen-config.git
+    9  ls gnu-screen-config/
+   10  ls -a gnu-screen-config/
+   11  man ln
+   12  ln gnu-screen-config/.screenrc .
+   13  ls -a
+   14  screen
+   15  knife role from file base.rb
+   16  cd chef-repo-workshop-sysadmin/
+   17  knife role from file base.rb
+   18  knife role show base
+   19  knife ssh role:base "sudo chef-client" -x opscode -P opscode -a cloud.public_ipv4
+   20  knife cookbook site download motd-tail
+   21  knife cookbook help
+   22  knife cookbook upload motd-tail
+   23  tar xzvf motd-tail-1.2.0.tar.gz 
+   24  mv motd-tail cookbooks/.
+   25  rm motd-tail-1.2.0.tar.gz 
+   26  knife cookbook upload motd-tail
+   27  knife help
+   28  knife help list
+   29  knife role from file base.rb
+   30  knife ssh role:base "sudo chef-client" -x opscode -P opscode
+   31  knife node list
+   32  export EDITOR=/usr/bin/emacs
+   33  knife node edit ip-10-124-189-96.ec2.internal
+   34  ls cookbooks/motd-tail/templates/default/
+   35  knife node show ip-10-124-189-96.ec2.internal
+   36  knife cookbook site download sudo
+   37  tar xvzf sudo-2.0.4.tar.gz 
+   38  mv sudo cookbooks/.
+   39  rm sudo-2.0.4.tar.gz 
+   40  knife cookbook upload sudo
+   41  knife role help
+   42  knife role from file base.rb
+   43  knife ssh role:base "sudo chef-client" -x opscode -P opscode
+   44  knife cookbook site download ntp
+   45  tar xvzf ntp-1.3.2.tar.gz 
+   46  mv ntp cookbooks/.
+   47  rm ntp-1.3.2.tar.gz 
+   48  knife cookbook upload ntp
+   49  knife role from file roles/*.rb
+   50  knife ssh role:base "sudo chef-client --color" -x opscode -P opscode
+   51  knife cookbook site download postfix
+   52  tar xvzf postfix-2.1.2.tar.gz 
+   53  mv postfix cookbooks/.
+   54  rm postfix-2.1.2.tar.gz 
+   55  knife cookbook upload cookbook
+   56  knife cookbook upload postfix
+   57  knife role from file roles/*.rb
+   58  knife ssh role:base "sudo chef-client" -x opscode -P opscode
+   59  knife cookbook site download users
+   60  tar xvzf users-1.3.0.tar.gz 
+   61  mv users cookbooks/
+   62  rm cookbooks/
+   63  rm users-1.3.0.tar.gz 
+   64  knife cookbooks upload users
+   65  knife cookbook upload users
+   66  knife role from file base.rb
+   67  knife data bag from file users carver.json
+   68  which bash
+   69  knife data bag show users
+   70  knife data bag show users carver
+   71  knife ssh role:base "sudo chef-client" -x opscode -P opscode
+   72  ssh-keygen -t rsa -f chef-workshop
+   73  ls
+   74  ls -al ~/.ssh
+   75  ls
+   76  cat chef-workshop.pub 
+   77  knife data bag upload users carver
+   78  knife data bag from file users carver
+   79  knife data bag from file users carver.json
+   80  knife ssh role:base "sudo chef-client" -x opscode -P opscode
+   81  ls
+   82  cp chef-workshop ~/.ssh/.
+   83  man ssh
+   84  ssh -i chef-workshop ip-10-124-189-96.ec2.internal
+   85  ssh -i chef-workshop carver@ip-10-124-189-96.ec2.internal
+   86  knife data bag from file users carver.json
+   87  knife ssh role:base "sudo chef-client" -x opscode -P opscode
+   88  ssh -i chef-workshop carver@ip-10-124-189-96.ec2.internal
+   89  knife role from file base.rb
+   90  knife role from file roles/base.rb 
+   91  knife ssh role:base "sudo chef-client" -x opscode -P opscode
+   92  knife cookbook site download zsh
+   93  tar xzvf zsh-1.0.0.tar.gz 
+   94  mv zsh cookbooks/
+   95  rm zsh-1.0.0.tar.gz 
+   96  knife cookbook upload zsh
+   97  knife ssh role:base "sudo chef-client" -x opscode -P opscode
+   98  ssh -i chef-workshop carver@ip-10-124-189-96.ec2.internal
+   99  knife ssh role:base "sudo chef-client" -x carver -i chef-workshop
+  100  knife ssh role:base "sudo chef-client -f fatal" -x carver -i chef-workshop
+  101  knife ssh role:base "sudo chef-client -l fatal" -x carver -i chef-workshop
+  102  knife ssh role:base "sudo chef-client -F doc" -x carver -i chef-workshop
+  103  knife ssh role:base "sudo chef-client -W" -x carver -i chef-workshop
+  104  ls
+  105  ls cookbooks/users/recipes/
+  106  cat .gitignore 
+  107  history
+  108  history > workstation-bash.log
+
